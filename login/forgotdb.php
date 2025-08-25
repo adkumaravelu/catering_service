@@ -35,8 +35,8 @@ if ($action === 'send_otp') {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'kumaraveluad@gmail.com';   // ✅ Your Gmail
-            $mail->Password   = 'sxrtjbstvfukqpsu';         // ✅ Gmail App Password
+            $mail->Username   = '';   // ✅ Your Gmail
+            $mail->Password   = '';         // ✅ Gmail App Password
             $mail->SMTPSecure = 'tls';
             $mail->Port       = 587;
 
@@ -49,7 +49,7 @@ if ($action === 'send_otp') {
                 ]
             ];
 
-            $mail->setFrom('kumaraveluad@gmail.com', 'Catering Project');
+            $mail->setFrom('', 'Catering Project');
             $mail->addAddress($email);
 
             $mail->isHTML(true);
