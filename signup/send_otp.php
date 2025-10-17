@@ -65,8 +65,8 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'kumaraveluad@gmail.com';   // <-- replace
-    $mail->Password   = 'sxrtjbstvfukqpsu';              // <-- replace (Gmail App Password)
+    $mail->Username   = '';   // <-- replace
+    $mail->Password   = '';              // <-- replace (Gmail App Password)
     $mail->SMTPSecure = 'tls';
     $mail->Port       = 587;
 
@@ -79,7 +79,7 @@ try {
         ]
     ];
 
-    $mail->setFrom('kumaravelu@gmail.com', 'Catering Signup');
+    $mail->setFrom('', 'Catering Signup');
     $mail->addAddress($email);
 
     $mail->isHTML(true);

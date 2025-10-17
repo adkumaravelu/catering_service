@@ -97,8 +97,8 @@ if ($stmt->execute()) {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'kumaraveluad@gmail.com';   // your gmail
-            $mail->Password   = 'sxrtjbstvfukqpsu';         // gmail app password
+            $mail->Username   = '';   // your gmail
+            $mail->Password   = '';         // gmail app password
             $mail->SMTPSecure = 'tls';
             $mail->Port       = 587;
 
@@ -110,7 +110,7 @@ if ($stmt->execute()) {
                 ]
             ];
 
-            $mail->setFrom('kumaraveluad@gmail.com', 'Catering Admin');
+            $mail->setFrom('', 'Catering Admin');
             $mail->addAddress($agentEmail);
 
             $mail->isHTML(true);

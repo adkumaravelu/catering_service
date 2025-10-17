@@ -30,7 +30,7 @@ if(isset($_GET['cancel_id'])){
         $stmt->close();
 
         // Send email to admin
-        $adminEmail = "kumaraveluad@gmail.com";
+        $adminEmail = "";
         $subject = "Event Canceled by User";
         $message = "User ID: $userId\nEvent Name: ".$event['event_name']."\nService: ".$event['service_name']."\nDate: ".$event['event_date']."\nStatus: Canceled";
         $headers = "From: no-reply@yourdomain.com";
